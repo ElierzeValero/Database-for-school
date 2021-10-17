@@ -20,7 +20,7 @@ Apellido CHAR(20),
 Rut VARCHAR(9),
 Direccion CHAR(50),
 Curso VARCHAR(5),
-FechaCreacion DATETIME NOT NULL
+FechaCreacion DATE NOT NULL
 );
 
 create table prestamo(
@@ -28,8 +28,8 @@ CodPrestamo INT NOT NULL,
 CodLibro VARCHAR(6) NOT NULL,
 CodUsuario VARCHAR(6) NOT NULL,
 CodPrestatario VARCHAR(6) NOT NULL,
-FechaPrestamo DATETIME NOT NULL,
-FechaEntrega DATETIME 
+FechaPrestamo DATE NOT NULL,
+FechaEntrega DATE 
 );
 
 
@@ -39,7 +39,7 @@ Nombre  CHAR(20) NOT NULL,
 Apellido CHAR(20) NOT NULL,
 Rut VARCHAR(9) NOT NULL,
 Contraseña VARCHAR(10) NOT NULL,
-FechaCreacion DATETIME NOT NULL,
+FechaCreacion DATE NOT NULL,
 NivelUsuario VARCHAR(5)
 );
 
@@ -52,7 +52,7 @@ Stock int NOT NULL
 create table auditoria(
 CodAuditoria VARCHAR(5) NOT NULL,
 NomAuditor CHAR(40) NOT NULL,
-FechaAuditoria date NOT NULL
+FechaAuditoria DATE NOT NULL
 );
 
 /*---Asignacion de PK---*/
